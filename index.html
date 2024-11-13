@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        //Task 1: Day of the Week Message
+//Scenario: Develop a webpage that displays a special message based on the current day of the week.
+
+//“Start your week strong!” for Monday.
+//“Keep going!” for Tuesday.
+//“Halfway there!” for Wednesday.
+//“Almost the weekend!” for Thursday.
+//“Happy Friday!” for Friday.
+//“Enjoy your weekend!” for Saturday and Sunday.
+
+//Task:
+//Get the current day of the week.
+//Display the corresponding message.
+
+//using switch cases
+         var day=prompt('Please Enter The Day')
+         switch(day){
+            case 'sunday':
+            console.log('Enjoy The sunday');
+         break;
+            case 'monday':
+            console.log('Start your week strong!');
+         break;
+            case 'tuesday':
+            console.log('Keep going!');
+         break;
+            case 'wednesday':
+            console.log('Halfway there!');
+            case 'thursday':
+            console.log('Almost the weekend!');
+         break;
+            case 'friday':
+            console.log('Happy Friday!');
+         break;
+            case 'saturday':
+            console.log('Enjoy your weekend!');
+         break;  
+            case 'default':
+            console.log('You Enter wrong day')
+
+         }
+         
+
+// using the if,else if conditions 
+
+         var day=prompt('Please Enter The Day')
+            if(day=='sunday'){
+            console.log('Enjoy The sunday');
+         }  else if (day=='monday'){
+            console.log('Start your week strong!');
+         }  else if (day=='tuesday'){
+            console.log('Keep going!');
+        }   else if (day=='wednesday'){
+            console.log('Halfway there!');
+        }   else if (day=='thursday'){
+            console.log('Almost the weekend!');
+        }   else if (day=='friday'){
+            console.log('Happy Friday!');
+        }   else if (day=='saturday'){
+            console.log('Enjoy your weekend!');
+        }   else;
+            console.log('You Enter wrong day');
+
+        
+//Task 2: Traffic Light Simulation
+//Scenario: Simulate a traffic light system.
+
+//“Stop” if the light is red.
+//“Get Ready” if the light is yellow.
+//“Go” if the light is green.
+//Task:
+
+//Prompt the user to enter the color of the traffic light.
+//Display the corresponding action.
+
+//using if , else if
+let light=prompt('Enter the Traffic Light Simulation')
+
+if(light=='red'){
+    console.log('Stop')
+} else if(light=='yellow'){
+    console.log('Get Ready');
+} else if(light=='green'){
+    console.log('Go');
+} else{
+    console.log('Please Enter correct light')
+}
+
+
+// using switch case
+let Light=prompt('Enter the Traffic Light Simulation')
+
+switch(Light){
+    case 'red':
+    console.log('Stop')
+    case 'yellow':
+    console.log('Get Ready')
+    case 'green':
+    console.log('Go');
+    default:
+    console.log('Please Enter correct light')
+}
+
+   //Task 3: Discount Calculator
+//Scenario: Calculate the discount based on the total purchase amount.
+
+//“No discount” if the amount is less than $50.
+//“5% discount” if the amount is between $50 and $100.
+//“10% discount” if the amount is between $101 and $200.
+//“15% discount” if the amount is above $200.
+//Task:
+
+//Prompt the user to enter the total purchase amount.
+//Display the discount percentage. 
+
+let amount=+prompt('Enter the Purchase Amount')
+
+if(amount<50){
+    console.log('No Discount');
+} else if(amount>=50 && amount<=100){
+    console.log('5% Discount');
+} else if(amount>100 && amount<=200){
+    console.log('10% Discount');
+} else if(amount > 200) {
+   console.log('15% Discount'); 
+}else{
+    console.log('Please Enter correct amount')
+}
+
+
+
+
+//Task 4: Restaurant Menu
+//Scenario: You are developing a restaurant menu system that provides the price of a dish based on the dish name.
+
+//Task:
+//Assume a variable dish holds the name of the dish as a string (e.g.,  "Biriyani", "shawarma", "Fried rice", "veg pula").
+//Print the price.
+
+
+
+let dishname=prompt('Please Enter the Dish name')
+
+switch(dishname){
+    case 'biryani':
+        console.log('The cost of the biryani is 300Rs');
+    break
+    case 'shawarma':
+       console.log('The cost of the shawarma is 120Rs');
+       break
+    case 'friderice':
+       console.log('The cost of the friderice is 150Rs');
+       break
+    case 'vegfriderice':
+       console.log('The cost of the veg fride rice is 120Rs');
+       break
+    default:
+       console.log('The cost of the'+(dishname)+'is 100Rs');
+       break
+       
+}
+
+
+
+
+
+
+
+
+
+//Task 5: Simple Calculator
+//Scenario: You are developing a simple calculator that performs basic arithmetic operations.
+//Task: 
+//Assume variables num1 and num2 hold two numbers, and operator holds the arithmetic operator as a string (e.g., “+”).
+//Use a switch case statement to perform the operation and store the result in a variable result.
+//Print the result.
+
+var a=+prompt(" Please Enter the first value")
+var b=+prompt("Please Enter the second value")
+var calculation=prompt('Please enter the what type of calculation do you need')
+
+switch(calculation){
+    case 'addition':
+      console.log( 'the addition of the numbers is'+ (a+b));
+    break
+    case 'subtraction':
+      console.log( 'the subtraction of the numbers is'+ (a-b));
+    break
+    case 'multiflication':
+    console.log( 'the multiflication of the numbers is'+ (a*b));
+    break
+    case 'division':
+    console.log( 'the division of the numbers is'+ (a/b));
+    break
+    case 'modulardevision':
+    console.log( 'the modulardevision of the numbers is'+ (a%b));
+    break
+    default:
+    console.log('please enter the correct value')
+      
+}
+
+    </script>
+</body>
+</html>
